@@ -41,13 +41,52 @@
             </li>
             <li><a href="#">Projects</a></li>
           </ul>
-          <div class="container">
-            <form>
-              <input type="text" placeholder="Username" />
-              <input type="password" placeholder="Password" />
-              <button type="submit">Login</button>
-            </form>
-          </div>
+
+          <h4>Do you already have an account?</h4>
+
+          <button onclick="showFieldset('fieldset_login', 'fieldset_register')">
+            Yes
+          </button>
+          <button onclick="showFieldset('fieldset_register', 'fieldset_login')">
+            No
+          </button>
+          <br />
+          <br />
+          <form id="login" name="login" method="post" action="noaction.html">
+            <fieldset id="fieldset_login">
+              <legend>Log in</legend>
+              <p>
+                <label for="user_login">User ID:</label>
+                <input type="text" id="user_login" />
+              </p>
+              <p>
+                <label for="pw_login">Password:</label>
+                <input type="password" name="pw" id="pw_login" />
+              </p>
+              <p>
+                <button name="button" id="button">Submit</button>
+              </p>
+            </fieldset>
+            <fieldset id="fieldset_register">
+              <legend>Register</legend>
+              <p>
+                <label for="user_register">User ID:</label>
+                <input type="text" id="user_register" />
+              </p>
+              <p>
+                <label for="pw_register">Password:</label>
+                <input type="password" name="pw" id="pw_register" />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </p>
+              <p>
+                <button name="button" id="button">Submit</button>
+              </p>
+            </fieldset>
+          </form>
+
           <div class="search">
             <form action="#">
               <input type="text" placeholder=" Search " name="search" />
