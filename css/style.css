@@ -114,6 +114,29 @@ nav li a {
   -webkit-box-sizing: border-box;
 }
 
+.search input[type="text"] {
+  width: 250px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+.search {
+  float: left;
+  margin-left: 16px;
+}
+
+.search button {
+  background-color: #0c3c60;
+  color: #f2f2f2;
+  float: inherit;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
 nav li a:hover {
   border-bottom: 0px;
   color: #fff;
@@ -177,7 +200,8 @@ input[type="password"] {
   margin-top: 8px;
   font-size: 17px;
   border: none;
-  width: 150px;
+  width: 100px;
+  display: inline-block;
 }
 nav button {
   padding: 10px;
